@@ -29,3 +29,11 @@ It correctly bundles Solid in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+### Author
+
+[Hisam A Fahri](https://hisamafahri.com): [@hisamafahri](https://github.com/hisamafahri)
+
+### License
+
+[GNU GPLv3](LICENSE)
