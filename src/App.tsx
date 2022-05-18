@@ -1,7 +1,6 @@
-import { Component, createSignal } from "solid-js";
+import { Component } from "solid-js";
 import TextLogo from "../src/assets/svg/TextLogo.svg";
 import IconLogo from "../src/assets/svg/IconLogo.svg";
-import Menu from "../src/assets/svg/Menu.svg";
 import BackgroundIllustration from "../src/assets/image/bg.png";
 
 const App: Component = () => {
@@ -14,33 +13,21 @@ const App: Component = () => {
 };
 
 export default App;
-
 const Background: Component = () => {
   return (
-    <div class="right-0 md:bottom-0 mt-8 absolute">
+    <div class="right-0 md:bottom-0 absolute">
       <img src={BackgroundIllustration} alt="background" class="" />
     </div>
   );
 };
 
 const Header: Component = () => {
-  const [isMenuVisible, setIsMenuVisible] = createSignal(false);
-
   return (
     <div class="px-8 lg:px-16 pt-8 flex flex-row justify-between items-cente">
       <a href="/" class="min-w-fit">
         <img src={TextLogo} alt="logo" class="hidden lg:flex" />
         <img src={IconLogo} alt="logo" class="flex lg:hidden" />
       </a>
-      <div>
-        <div
-          onClick={() => {
-            setIsMenuVisible(!isMenuVisible());
-            console.log(isMenuVisible());
-          }}
-        >
-          <img src={Menu} alt="menu" class="flex lg:hidden cursor-pointer" />
-        </div>
         <div class="hidden lg:grid grid-cols-3 gap-x-6 text-right text-white font-ng-mono items-center">
           <a
             href="mailto:team@ngoding.org"
@@ -62,7 +49,7 @@ const Header: Component = () => {
           >
             ikut_kontribusi <span class="text-ng-yellow">/&gt;</span>
           </a>
-        </div>
+
       </div>
     </div>
   );
