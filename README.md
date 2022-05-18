@@ -4,6 +4,8 @@ This repository is the home for [ngoding.org](https://ngoding.org) prelaunch web
 
 It was build using [TypeScript](https://www.typescriptlang.org/), [SolidJS](https://solidjs.com), and [TailwindCSS](https://tailwindcss.com/).
 
+*Note: I designed the logo, UI, and code it in just few hours. There are a lot of things to improve here. But it is just a pre-launch website. I don't want to spend most of my times here.*
+
 ## Usage
 
 We are strongly suggest to use [pnpm](https://pnpm.io) as the preferred package manager while working with this project, since the dependencies are maintained via `pnpm up -Lri`.
