@@ -5,7 +5,16 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'ng-mono': ['Space Mono', 'monospace'],
+        'ng-text': ['Space Grotesk', 'monospace'],
+      },
+      colors: {
+        'ng-dark': '#171717',
+        'ng-yellow': '#FCA311'
+      }
+    },
   },
   plugins: [],
 };
