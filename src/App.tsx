@@ -72,7 +72,6 @@ const Body: Component = () => {
           </p>
         </div>
       </div>
-      <Background />
     </>
   );
 };
